@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandana M R - Resume & Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo" onclick="showPage('home', event)">
+                <i class="fas fa-user-circle"></i> Chandana M R
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" onclick="showPage('home', event)" class="nav-link active">Home</a></li>
+                <li><a href="#" onclick="showPage('bio', event)" class="nav-link">Bio-Data</a></li>
+                <li><a href="#" onclick="showPage('resume', event)" class="nav-link">Resume</a></li>
+                <li><a href="#" onclick="showPage('contact', event)" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Chandana M R</h1>
+                <p class="job-title">Computer Science Engineer & Full Stack Developer</p>
+                <p>Passionate about building scalable web applications and solving complex algorithmic problems. BTech in Computer Science from Akshaya Institute of Technology with expertise in full-stack development, data structures, and cloud technologies.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="showPage('resume', null)">View Resume</button>
+                    <button class="btn btn-secondary" onclick="showPage('contact', null)">Get In Touch</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>Welcome</h2>
+            <p style="text-align: center; font-size: 18px; color: var(--text-light); max-width: 800px; margin: 0 auto;">
+                I'm a Computer Science Engineer and Full Stack Developer with strong fundamentals in data structures, algorithms, and software engineering. 
+                Currently pursuing my BTech at Akshaya Institute of Technology, I'm enthusiastic about creating efficient, scalable solutions and continuously learning emerging technologies.
+            </p>
+        </section>
+
+        <section class="container">
+            <h2>Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3><i class="fas fa-code"></i> Web Development</h3>
+                    <p>Building responsive, scalable web applications using modern frameworks and best practices.</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-paint-brush"></i> UI/UX Design</h3>
+                    <p>Creating intuitive, beautiful interfaces that users love. User-centered design is my priority.</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-mobile-alt"></i> Mobile Development</h3>
+                    <p>Developing responsive mobile applications that work seamlessly across all devices.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bio-Data Page -->
+    <div id="bio" class="page">
+        <section class="container">
+            <h2>Bio-Data</h2>
+            <div class="bio-content">
+                <div class="bio-image">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%233498db' width='300' height='300'/%3E%3Ctext x='50%25' y='50%25' font-size='60' fill='white' text-anchor='middle' dy='.3em'%3EJA%3C/text%3E%3C/svg%3E" alt="John Anderson">
+                </div>
+                <div class="bio-info">
+                    <h3>Personal Information</h3>
+                    
+                    <div class="bio-detail">
+                        <label>Full Name</label>
+                        <span>Chandana M R</span>
+                    </div>
+
+                    <div class="bio-detail">
+                        <label>Date of Birth</label>
+                        <span>23-11-2004</span>
+                    </div>
+
+                    <div class="bio-detail">
+                        <label>Nationality</label>
+                        <span>Indian</span>
+                    </div>
+
+                    <div class="bio-detail">
+                        <label>Gender</label>
+                        <span>Female</span>
+                    </div>
+
+                    <div class="bio-detail">
+                        <label>Email</label>
+                        <span>mrchandana23@gmail.com</span>
+                    </div>
+
+                    <div class="bio-detail">
+                        <label>Phone</label>
+                        <span>+91 89702 61714</span>
+                    </div>
+
+                    <div class="bio-detail">
+                        <label>Location</label>
+                        <span>Tumkur, Karnataka, India</span>
+                    </div>
+
+                    <div class="bio-detail">
+                        <label>Languages</label>
+                        <span>English, Kannada, Hindi</span>
+                    </div>
+
+                    <div class="bio-detail">
+                        <label>Current Status</label>
+                        <span>BTech Student (Third Year) - Akshaya Institute of Technology</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Resume Page -->
+    <div id="resume" class="page">
+        <!-- Summary -->
+        <section class="container">
+            <h2>Professional Summary</h2>
+            <p style="font-size: 18px; color: var(--text-light); text-align: center; max-width: 900px; margin: 0 auto; line-height: 1.8;">
+                Computer Science Engineering student at Akshaya Institute of Technology with strong foundation in full-stack web development, 
+                data structures, and algorithms. Passionate about building scalable applications and solving complex problems. Experienced in 
+                modern technologies including React.js, Node.js, MongoDB, and cloud platforms. Quick learner with proven ability to develop 
+                end-to-end solutions from concept to deployment.
+            </p>
+        </section>
+
+        <!-- Projects -->
+        <section class="container">
+            <h2>Academic Projects</h2>
+            <div class="card-list">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3>E-Commerce Web Application</h3>
+                            <div class="institution">React.js, Node.js, MongoDB, Express.js</div>
+                        </div>
+                        <span class="period">Nov 2025</span>
+                    </div>
+                    <p>
+                        Engineered a full-stack e-commerce platform with user authentication, cart functionality, and payment integration. 
+                        Implemented RESTful APIs handling 500+ concurrent requests with JWT-based security and session management. 
+                        Optimized database queries and implemented Redis caching, reducing page load time by 45%. 
+                        Deployed application on AWS EC2 with automated CI/CD pipeline using GitHub Actions.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3>Algorithm Visualizer</h3>
+                            <div class="institution">JavaScript, HTML5, CSS3, D3.js</div>
+                        </div>
+                        <span class="period">Dec 2025</span>
+                    </div>
+                    <p>
+                        Built interactive web application visualizing sorting and searching algorithms with step-by-step animations. 
+                        Implemented 10+ algorithms including QuickSort, MergeSort, BFS, DFS with complexity analysis displays. 
+                        Enhanced learning experience for 200+ users through intuitive UI and adjustable animation speed controls.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="container">
+            <h2>Education</h2>
+            <div class="card-list">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3>Bachelor of Engineering in Computer Science</h3>
+                            <div class="institution">Akshaya Institute of Technology, Tumkur</div>
+                        </div>
+                        <span class="period">Oct. 2023 - Oct. 2027</span>
+                    </div>
+                    <p>
+                        <strong>CGPA: 8.0/10.0</strong><br>
+                        <strong>Relevant Coursework:</strong> Data Structures & Algorithms, Object-Oriented Programming, 
+                        Database Management, Operating Systems, Computer Networks, Software Engineering, Web Development
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">Java <span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Python <span>88%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">JavaScript <span>92%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 92%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">C++ <span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3><i class="fas fa-desktop"></i> Frontend Technologies</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">React.js <span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">HTML/CSS <span>94%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 94%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">jQuery <span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Responsive Design <span>92%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 92%;"></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3><i class="fas fa-server"></i> Backend & Databases</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">Node.js <span>88%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">MongoDB <span>87%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 87%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">MySQL <span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Express.js <span>86%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 86%;"></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3><i class="fas fa-tools"></i> Developer Tools</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">Git & GitHub <span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">VS Code <span>92%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 92%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Linux <span>80%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3><i class="fas fa-cloud"></i> Cloud & Deployment</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">AWS <span>82%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 82%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Docker <span>78%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 78%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">REST APIs <span>88%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+        <section class="container" style="text-align: center;">
+            <h2>Get In Touch</h2>
+            <p style="font-size: 18px; color: var(--text-light); margin-bottom: 50px;">
+                Feel free to reach out for collaborations or just a friendly hello. I'm always interested in interesting projects and opportunities.
+            </p>
+
+            <div style="max-width: 600px; margin: 0 auto;">
+                <div class="card" style="margin-bottom: 30px;">
+                    <h3><i class="fas fa-envelope"></i> Email</h3>
+                    <p><a href="mailto:mrchandana23@gmail.com" style="color: var(--secondary-color); text-decoration: none;">mrchandana23@gmail.com</a></p>
+                </div>
+
+                <div class="card" style="margin-bottom: 30px;">
+                    <h3><i class="fas fa-phone"></i> Phone</h3>
+                    <p><a href="tel:+918970261714" style="color: var(--secondary-color); text-decoration: none;">+91 89702 61714</a></p>
+                </div>
+
+                <div class="card" style="margin-bottom: 30px;">
+                    <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
+                    <p>Tumkur, Karnataka, India</p>
+                </div>
+
+                <div class="social-links" style="justify-content: center; margin-top: 40px;">
+                    <a href="https://www.linkedin.com/in/chandana-m-r-13b4562a3/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://dribbble.com" target="_blank" title="Dribbble"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/chandana-m-r-13b4562a3/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://dribbble.com" target="_blank"><i class="fab fa-dribbble"></i></a>
+        </div>
+        <p>&copy; 2025 Chandana M R. All rights reserved.</p>
+        <p style="font-size: 13px; color: rgba(255,255,255,0.7); margin-top: 10px;">
+            Designed & Developed with <i class="fas fa-heart" style="color: var(--accent-color);"></i> using HTML, CSS, JavaScript & jQuery
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
